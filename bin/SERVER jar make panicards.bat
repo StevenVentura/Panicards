@@ -1,0 +1,1 @@
+jar cvfm PanicardsServer.jar PanicardsServer.mf *.class
