@@ -6,7 +6,7 @@ Panicards.jar, and both players run the PanicardsClient.jar.
 
 Instructions to run this game:
 
-1) download and run PanicardsClient on both Guest&Host computers. It should generate two image files besides the jar. 
+1) download and run PanicardsClient on both Guest&Host computers. It should generate two image files alongside the jar. 
 
 2) download and run PanicardsServer on Host computer. It should generate a GameRules.txt file. 
 
