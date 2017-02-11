@@ -7,7 +7,10 @@ Panicards.jar, and both players run the PanicardsClient.jar.
 Instructions to run this game:
 
 0) download Java 5 or later. 
-        if the JARs do not open, consider running https://dl.dropboxusercontent.com/u/51610798/jarfix.exe on your machine to fix the issue. this is usually related to bad .JAR file associations on windows.
+
+        if the JARs do not open, consider running https://dl.dropboxusercontent.com/u/51610798/jarfix.exe on your machine to fix the issue. 
+        this is usually related to bad .JAR file associations on windows.
+
 1) download and run PanicardsClient on both Guest&Host computers. It should generate two image files alongside the jar. 
 
 2) download and run PanicardsServer on Host computer. It should generate a GameRules.txt file. 
