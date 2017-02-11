@@ -14,12 +14,14 @@ Instructions to run this game:
 
 2) download and run PanicardsServer on Host computer. It should generate a GameRules.txt file. 
 
-3) enter the credentials in the PanicardsClient menu bottom-right box. 
+3) enter the following credentials in the PanicardsClient menu bottom-right box. 
 
     Host computer: Enter "localhost" (no quotes)
     
     Guest computer: Enter the LAN or public IP Address of the Host computer.
     *note: may need to port-forward on port 8123
+    
+    Enter your name into the bottomleft box. (Just cos)
 
 4) play game of Speed with your friend!
 
