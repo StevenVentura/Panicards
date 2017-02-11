@@ -1,7 +1,5 @@
 # Panicards
-Two player online card game (Speed layout)
-
-Played over direct computer-to-computer websocket connection (LAN and internet supported)
+Two player card game, played over direct computer-to-computer websocket connection (LAN and internet supported)
 
 Instructions to run this game:
 
