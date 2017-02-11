@@ -26,7 +26,11 @@ Instructions to run this game:
 
 Controls: 
 
-        press Enter to open menu. (You can flip the board around on your screen)
+        press Enter while hovering over blankspace to open the Game Menu.
+        
+        press Enter while hovering over a card/deck to open Deck Menu.
 
         Right-click to flip a card.
+        
+        LeftClick&Drag to move cards.
 
