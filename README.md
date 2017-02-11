@@ -1,6 +1,8 @@
 # Panicards
 Two player card game, played over direct computer-to-computer websocket connection (LAN and internet supported)
 
+Here's garbage-tier youtube video: https://www.youtube.com/watch?v=wF6CmfkH_78
+
 Instructions to run this game:
 
 0) Download the two .jar files from /executableJars. also make sure you have Java 7 or later. 
@@ -33,4 +35,6 @@ Controls:
         Right-click to flip a card.
         
         LeftClick&Drag to move cards.
+        
+ 
 
