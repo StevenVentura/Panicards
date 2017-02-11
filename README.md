@@ -1,8 +1,7 @@
 # Panicards
 Two player online card game (Speed layout)
 
-Cardgame of Speed over Java Websocket. One player runs the
-Panicards.jar, and both players run the PanicardsClient.jar.
+Played over direct computer-to-computer websocket connection (LAN and internet supported)
 
 Instructions to run this game:
 
