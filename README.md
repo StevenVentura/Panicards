@@ -1,7 +1,7 @@
 # Panicards
 Two player card game, played over direct computer-to-computer websocket connection (LAN and internet supported)
 
-Here's garbage-tier youtube video: https://www.youtube.com/watch?v=wF6CmfkH_78
+Here's garbage-tier youtube video: https://www.youtube.com/watch?v=wVSjyQtRz38
 
 Instructions to run this game:
 
