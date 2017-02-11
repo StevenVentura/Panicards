@@ -6,7 +6,7 @@ Panicards.jar, and both players run the PanicardsClient.jar.
 
 Instructions to run this game:
 
-0) download Java 5 or later. 
+0) download Java 7 or later. 
 
         if the JARs do not open, consider running https://dl.dropboxusercontent.com/u/51610798/jarfix.exe on your machine to fix the issue. 
         this is usually related to bad .JAR file associations on windows.
@@ -27,7 +27,7 @@ Instructions to run this game:
 
 Controls: 
 
-press Enter to open menu. (You can flip the board around on your screen)
+        press Enter to open menu. (You can flip the board around on your screen)
 
-Right-click to flip a card.
+        Right-click to flip a card.
 
