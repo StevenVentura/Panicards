@@ -1,0 +1,7 @@
+Put true or false for game rules!
+grab other players' hands:false
+nausea background:false
+slidy cards:false
+separate sides:false
+game of speed:false
+

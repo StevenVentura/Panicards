@@ -18,6 +18,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Stack;
 import java.util.TreeMap;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
  
 
 
@@ -226,11 +228,19 @@ public class PanicardsServer
         try{
         players = new TreeMap<Integer, Player>();
         gui = new ServerGUI(this);
-        gui.println(">Panicards server on " + getOwnExternalIP() + ":8123<");
-         
+        gui.println(">your INTERNET address is " + getOwnExternalIP() + "<");
+		{
+		String hostName = "" +InetAddress.getLocalHost();
+		int index = -1;
+		index = hostName.indexOf('/');
+		System.out.println(index);
+		if (index != -1)
+			hostName = hostName.substring(index+1);
+		gui.println(">your LAN address is " + hostName + "<");
+		}
         boolean grFileFound = gr.defineSelfFromFile();
 
-        gui.println("GameRules:");
+        gui.println(" GameRules.txt settings:");
         if (!grFileFound)
         	gui.println("PLEASE RESTART SERVER (gamerules file)");
                 for (int i = 0; i < GameRules.descriptions.length; i++)
@@ -243,7 +253,7 @@ public class PanicardsServer
                 
                 gui.println("----------");
                 gui.println("Listening for connections on port 8123...");
-                 
+                 gui.println("Downloaded from https://github.com/StevenVentura/Panicards. Free use under GNU");
          
          
         // setupRandom();

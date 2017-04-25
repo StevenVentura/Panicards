@@ -1309,19 +1309,37 @@ public class Panicards extends JApplet implements KeyListener, MouseListener, Mo
     frame.add(jsp);
     
     IPInput = new JTextField();
-    IPInput.setBackground(new Color(0.025f,0.025f,0.025f).darker());
-    IPInput.setForeground(new Color(0.4862f, 0.1882f, 0.1882f).brighter());
+    IPInput.setBackground(Color.BLACK);
+    IPInput.setForeground(Color.GRAY);
     IPInput.setFont(new Font("DejaVu Sans", Font.BOLD, 26));
     IPInput.setPreferredSize(new Dimension((int)((x-14)*3/4) - 1, 100-21));
-    IPInput.setText("98.201.3.67");
+    IPInput.setText("localhost");
     
     nameInput = new JTextField();
     nameInput.setBackground(new Color(0.025f,0.025f,0.025f).darker());
     nameInput.setForeground(new Color(0.4862f, 0.1882f, 0.1882f).brighter());
     nameInput.setFont(new Font("DejaVu Sans", Font.BOLD, 26));
     nameInput.setPreferredSize(new Dimension((int)((x-14)*1/4) - 1, 100-21));
-    nameInput.setText("Møøfin猫");//の
+    nameInput.setText("Steven");
     
+	nameInput.addActionListener(
+			new ActionListener()
+			{
+				public void actionPerformed(ActionEvent e)
+				{
+				IPInput.requestFocus();
+				IPInput.requestFocusInWindow();	
+				try{
+					Robot r = new Robot();
+					r.keyPress(KeyEvent.VK_ENTER);
+					Thread.sleep(100);
+					r.keyRelease(KeyEvent.VK_ENTER);
+				}catch(Exception e2) {
+					e2.printStackTrace();
+				};
+				
+			}
+			});
     
     IPInput.addActionListener(
     		new ActionListener()
@@ -1332,13 +1350,15 @@ public class Panicards extends JApplet implements KeyListener, MouseListener, Mo
     			if (text.equals(""))
     				return;
     			
+				IPInput.setText("attempting to connect...");
+				
     			if (pani.connect(text, 8123))
     			{
     				console.append("Successfully connected to " + text + "\r\n");
     				myUsername = nameInput.getText().replace(' ', '_');//to be put in user() object later
     			}
     			else
-    				console.append("Couldn't connect to " + text + "\r\n");
+    				console.append("Couldn't connect to " + text + ".  Make sure\r\n    you use the server's IP\r\n");
     			
     			IPInput.setText("");
     			
@@ -1367,7 +1387,8 @@ public class Panicards extends JApplet implements KeyListener, MouseListener, Mo
     console.append("Enter an IP address to connect to on port 8123\r\n   and your name!\r\n");
     
     frame.setVisible(true);
-    IPInput.requestFocus();
+	IPInput.requestFocus();
+    IPInput.requestFocusInWindow();
     }
  
     public void print(String s)
@@ -1388,13 +1409,13 @@ public class Panicards extends JApplet implements KeyListener, MouseListener, Mo
     	try{
     	if (!new File("skullback.png").isFile())
     	{
-    		BufferedImage skullback = ImageIO.read(new URL("https://dl.dropboxusercontent.com/u/51610798/skullback.png"));
+    		BufferedImage skullback = ImageIO.read(new URL("http://i.imgur.com/IG7iQEq.png"));
     		saveImageToFile("skullback.png", skullback);
     		System.out.println("Creating skullback.png");
     	}
     	if (!new File("cards.png").isFile())
     	{
-    		BufferedImage cards = ImageIO.read(new URL("https://dl.dropboxusercontent.com/u/51610798/cards.png"));
+    		BufferedImage cards = ImageIO.read(new URL("http://i.imgur.com/CuIIay7.png"));
     		saveImageToFile("cards.png", cards);
     		System.out.println("Creating cards.png");
     	}
